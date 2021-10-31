@@ -43,19 +43,24 @@
 
           <div class="col-lg-12 portfolio-info">
             <br>
-            <h2 style="color:#12d640">Tech Blog</h2>
+            <h2 style="color:#12d640">Image Captioning with CNN-RNN and LSTM</h2>
 
             <ul>
-              <li><strong>Tech Stack</strong>: Flask, SQLAlchemy, Python, Heroku, Postgres, Bootstrap, HTML, CSS</li>
-                <li><strong>Website URL</strong>: <a href="https://techingenious.herokuapp.com/" target="_blank">Link</a></li>
-              <li><strong>Github URL</strong>: <a href="https://github.com/rajaprerak/Blog_with_flask" target="_blank">Project Link</a></li>
+              <li><strong>Tech Stack</strong>: Tensorflow, Keras, Python, CNN-RNN and LSTM, Image processing and NLP</li>
+              <li><strong>Github URL</strong>: <a href="https://github.com/sirish999/Projects/tree/master/Image_Captioning" target="_blank">Project Link</a></li>
             </ul>
 
             <p>
-               The blog is created using flask as backend. I have used bootstrap for the frontend part. For storing the data, I have made use of MySQL database. I have used the python SQL toolkit SQLAlchemy for performing database access.
+               In this project, I have created a neural network architecture to automatically generate captions from images.
             </p>
               <p>
-                The blog consist of features like viewing posts. Admin can add new post, edit posts and delete posts. User can contact admin via the contact page.
+                After using the Microsoft Common Objects in COntext (MS COCO) dataset to train your network, this project' network can be used on novel images!
+            </p>
+              <p>
+                I passed all the inputs as a sequence to an LSTM. A sequence looks like this: first a feature vector that is extracted from an input image, then a start word, then the next word, the next word, and so on.
+            </p>
+              <p>
+                Embedding Dimension: The LSTM is defined such that, as it sequentially looks at inputs, it expects that each individual input in a sequence is of a consistent size and so we embed the feature vector and each word so that they are embed_size.
             </p>
           </div>
 
